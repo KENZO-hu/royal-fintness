@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Fitness</title>
+    <link rel="stylesheet" href="join-us.css">
+    <!--link of icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+ <!-- Join Us Section -->
+ <section id="join" class="join-us">
+    <h2 class="heading">Join <span>Us</span></h2>
+    <p>Fill out the form below to join Royal Fitness!</p>
+
+ <form action="https://formspree.io/f/xgveyqap" method="POST" class="join-form">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+    <label for="plan">Type of Plan</label>
+        <select id="plan" name="plan" required>
+            <option value="" disabled selected>Select Your Plan</option>
+            <option value="Basic">Basic - $100/Month</option>
+            <option value="Pro">Pro - $150/Month</option>
+            <option value="Premium">Premium - $300/Month</option>
+        </select>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+
+    <button type="submit" class="submit-btn">Submit</button>
+</form>
+ </section>
+ <!-- Footer Section -->
+
+ <footer class="footer">
+    <div class="social">
+        <a href="www.linkedin.com/in/adam-khalid-a6b5172bb"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="#"><i class='bx bxl-facebook-square'></i></a>
+        <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+    </div>
+
+    <p class="copyright">
+        &copy; Royal Fitness 2024 - All Rights Reserved
+    </p>
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 300,
+        duration: 1400,
+    });
+</script>
+   
+</body>
+</html>

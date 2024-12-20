@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Free Class - Royal Fitness</title>
+    <link rel="stylesheet" href="book.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <a href="#home" class="logo">Royal <span>Fitness</span></a>
+        <ul class="navbar">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#plans">Pricing</a></li>
+            <li><a href="index.html#review">Review</a></li>
+        </ul>
+    </header>
+
+    <section id="book-class">
+        <div class="container">
+            <h2 class="heading">Book Your <span>Free Class</span></h2>
+            <form action="submit-form.php" method="POST" action="https://formspree.io/f/xeoqkbrv">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="message">Message (Optional):</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-facebook-square'></i></a>
+            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+        </div>
+        <p class="copyright">
+            &copy; Royal Fitness 2024 - All Rights Reserved
+        </p>
+    </footer>
+</body>
+</html>
